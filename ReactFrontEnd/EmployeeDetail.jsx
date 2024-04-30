@@ -12,7 +12,7 @@ function EmployeeDetail() {
         .catch(err => console.log(err));
     })
     const handleLogout = () => {
-		axios.get('http://localhost:8081/logout')
+		axios.get('http://51.21.149.183:8081/logout')
 		.then(res => {
 			navigate('/start')
 		}).catch(err => console.log(err));
