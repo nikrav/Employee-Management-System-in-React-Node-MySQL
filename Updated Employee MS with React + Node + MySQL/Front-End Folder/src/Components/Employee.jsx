@@ -8,7 +8,7 @@ const Employee = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/auth/employee")
+      .get("http://51.21.149.183:3000/auth/employee")
       .then((result) => {
         if (result.data.Status) {
           setEmployee(result.data.Result);
