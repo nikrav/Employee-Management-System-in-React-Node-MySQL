@@ -7,7 +7,7 @@ function Home() {
   const [salary, setSalary] = useState()
 
   useEffect(() => {
-    axios.get('http://localhost:8081/adminCount')
+    axios.get('http://51.21.149.183:8081/adminCount')
 		.then(res => {
 			setAdminCount(res.data[0].admin)
 		}).catch(err => console.log(err));
