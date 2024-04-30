@@ -1,9 +1,9 @@
 import mysql from 'mysql'
 
 const con = mysql.createConnection({
-    host: "localhost",
+    host: "database-1.c50ee2aam39b.eu-north-1.rds.amazonaws.com",
     user: "root",
-    password: "",
+    password: "Vkvrrn123",
     database: "employeems"
 })
 
