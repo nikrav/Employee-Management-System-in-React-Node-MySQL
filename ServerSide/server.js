@@ -10,7 +10,7 @@ import path from 'path'
 const app = express();
 app.use(cors(
     {
-        origin: ["http://localhost:5173"],
+        origin: ["http://51.21.149.183:5173"],
         methods: ["POST", "GET", "PUT"],
         credentials: true
     }
@@ -20,9 +20,9 @@ app.use(express.json());
 app.use(express.static('public'));
 
 const con = mysql.createConnection({
-    host: "localhost",
+    host: "database-1.c50ee2aam39b.eu-north-1.rds.amazonaws.com",
     user: "root",
-    password: "",
+    password: "Vkvrrn123",
     database: "signup"
 })
 
