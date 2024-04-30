@@ -15,7 +15,7 @@ const EditEmployee = () => {
       const navigate = useNavigate()
 
       useEffect(()=> {
-        axios.get('http://localhost:3000/auth/category')
+        axios.get('http://51.21.149.183:3000/auth/category')
         .then(result => {
             if(result.data.Status) {
                 setCategory(result.data.Result);
