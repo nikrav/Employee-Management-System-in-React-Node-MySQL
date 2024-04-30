@@ -7,7 +7,7 @@ function Dashboard() {
 	const navigate = useNavigate()
 	axios.defaults.withCredentials = true;
 	useEffect(()=>{
-		axios.get('http://localhost:8081/dashboard')
+		axios.get('http://51.21.149.183:8081/dashboard')
 		.then(res => {
 			if(res.data.Status === "Success") {
 				if(res.data.role === "admin") {
