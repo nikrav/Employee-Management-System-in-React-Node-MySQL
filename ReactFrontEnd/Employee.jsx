@@ -6,7 +6,7 @@ function Employee() {
   const [data, setData] = useState([])
 
   useEffect(()=> {
-    axios.get('http://localhost:8081/getEmployee')
+    axios.get('http://51.21.149.183:8081/getEmployee')
     .then(res => {
       if(res.data.Status === "Success") {
         setData(res.data.Result);
