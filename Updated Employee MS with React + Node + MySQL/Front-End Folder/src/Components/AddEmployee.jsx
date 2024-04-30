@@ -17,7 +17,7 @@ const AddEmployee = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/auth/category")
+      .get("http://51.21.149.183:3000/auth/category")
       .then((result) => {
         if (result.data.Status) {
           setCategory(result.data.Result);
